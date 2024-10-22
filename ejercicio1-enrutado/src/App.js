@@ -2,12 +2,10 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import './App.css'; // Importamos el archivo de estilos
 
-// Componente Inicio
 function Inicio() {
-  return <h1 className="titulo animacion-color">Bienvenido a la página de inicio</h1>;
+  return <h1 className="titulo animacion-color">Bienvenido a la página de inicio uwu</h1>;
 }
 
-// Componente Sobre
 function Sobre() {
   return <h1 className="titulo animacion-color">Acerca de nosotros</h1>;
 }

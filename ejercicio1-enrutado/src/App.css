@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500;600&display=swap');
 
-/* Incluir la fuente en el cuerpo de la página */
 body {
   font-family: 'DynaPuff', cursive;
   background-color: #f0f0f0;
@@ -9,7 +8,6 @@ body {
   height: 100vh;
 }
 
-/* Estilos de la navegación */
 .navegacion {
   background-color: #333;
   padding: 10px;
@@ -69,7 +67,6 @@ body {
   color: #ff6347;
 }
 
-/* Estilos del contenedor de contenido */
 .contenido {
   display: flex;
   justify-content: center;
@@ -83,10 +80,9 @@ body {
   font-size: 36px;
   color: #333;
   text-align: center;
-  font-family: 'DynaPuff', cursive; /* Aplicamos la fuente DynaPuff */
+  font-family: 'DynaPuff', cursive;
 }
 
-/* Animación de cambio de color */
 @keyframes cambio-color {
   0% {
     color: #333;
