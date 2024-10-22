@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500;600&display=swap');
+
+/* Incluir la fuente en el cuerpo de la página */
+body {
+  font-family: 'DynaPuff', cursive;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+/* Estilos de la navegación */
+.navegacion {
+  background-color: #333;
+  padding: 10px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+.navegacion:hover {
+  background-color: #222;
+}
+
+.navegacion ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navegacion ul li {
+  margin: 0 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+.navegacion ul li .link {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 20px;
+  display: block;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.navegacion ul li .link::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: -100%;
+  background-color: #ff6347;
+  transition: left 0.3s ease;
+}
+
+.navegacion ul li .link:hover::before {
+  left: 0;
+}
+
+.navegacion ul li .link:hover {
+  color: #ff6347;
+}
+
+/* Estilos del contenedor de contenido */
+.contenido {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding-top: 60px;
+}
+
+/* Estilos para los títulos */
+.titulo {
+  font-size: 36px;
+  color: #333;
+  text-align: center;
+  font-family: 'DynaPuff', cursive; /* Aplicamos la fuente DynaPuff */
+}
+
+/* Animación de cambio de color */
+@keyframes cambio-color {
+  0% {
+    color: #333;
+  }
+  50% {
+    color: #ff6347;
+  }
+  100% {
+    color: #333;
+  }
+}
+
+.animacion-color {
+  animation: cambio-color 3s infinite;
+}
