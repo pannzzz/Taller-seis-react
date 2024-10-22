@@ -1,0 +1,56 @@
+    .contador-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f0f0;
+        font-family: 'Arial', sans-serif;
+    }
+    
+    .contador-container h1 {
+        font-size: 48px;
+        margin-bottom: 30px;
+        color: #333;
+    }
+    
+    .botones {
+        display: flex;
+        gap: 15px;
+    }
+    
+    .boton {
+        padding: 10px 20px;
+        font-size: 18px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.2s;
+        color: white;
+    }
+    
+    .boton:hover {
+        transform: scale(1.05);
+    }
+    
+    .boton:active {
+        transform: scale(0.95);
+    }
+    
+    .boton:nth-child(1) {
+        background-color: #804b9e;
+    }
+    
+    .boton:nth-child(2) {
+        background-color: #57498b;
+    }
+    
+    .boton.reset {
+        background-color: #e6885c;
+    }
+    
+    /* Botón hover */
+    .boton:hover {
+        opacity: 0.8;
+    }
+    
