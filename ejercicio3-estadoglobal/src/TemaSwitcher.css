@@ -1,0 +1,64 @@
+    /* Contenedor principal para el tema */
+    .tema-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        transition: background-color 0.3s, color 0.3s;
+    }
+    
+    /* Tema claro */
+    .tema-container.claro {
+        background-color: #f0f0f0;
+        color: #333;
+    }
+    
+    /* Tema oscuro */
+    .tema-container.oscuro {
+        background-color: #333;
+        color: #f0f0f0;
+    }
+    
+    /* Estilos del botón */
+    .boton {
+        margin-top: 20px;
+        padding: 15px 40px;
+        font-size: 18px;
+        border: none;
+        border-radius: 20px; /* Botón rectangular con bordes redondeados */
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s, transform 0.2s;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Botón en tema claro: fondo negro, texto blanco */
+    .tema-container.claro .boton {
+        background-color: black;
+        color: white;
+    }
+    
+    .tema-container.claro .boton:hover {
+        background-color: #555;
+        transform: scale(1.05);
+    }
+    
+    .tema-container.claro .boton:active {
+        transform: scale(0.95);
+    }
+    
+    /* Botón en tema oscuro: fondo blanco, texto negro */
+    .tema-container.oscuro .boton {
+        background-color: white;
+        color: black;
+    }
+    
+    .tema-container.oscuro .boton:hover {
+        background-color: #e0e0e0;
+        transform: scale(1.05);
+    }
+    
+    .tema-container.oscuro .boton:active {
+        transform: scale(0.95);
+    }
+        
