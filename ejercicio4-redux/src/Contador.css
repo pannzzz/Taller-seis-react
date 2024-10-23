@@ -1,0 +1,50 @@
+    .contador-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f5f5f5;
+        font-family: 'Arial', sans-serif;
+    }
+    
+    .contador-titulo {
+        font-size: 48px;
+        color: #333;
+        margin-bottom: 30px;
+    }
+    
+    .botones {
+        display: flex;
+        gap: 15px;
+    }
+    
+    .boton {
+        padding: 15px 30px;
+        font-size: 18px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        background-color: #4caf50;
+        color: white;
+        transition: background-color 0.3s, transform 0.2s;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    .boton:hover {
+        background-color: #45a049;
+        transform: scale(1.05);
+    }
+    
+    .boton:active {
+        transform: scale(0.95);
+    }
+    
+    .boton:nth-child(2) {
+        background-color: #f44336;
+    }
+    
+    .boton:nth-child(2):hover {
+        background-color: #e53935;
+    }
+    
