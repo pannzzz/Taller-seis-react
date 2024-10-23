@@ -1,6 +1,6 @@
 import React from 'react';
-import { TemaProvider } from './TemaContext'; // Importamos el proveedor de tema
-import TemaSwitcher from './TemaSwitcher'; // Importamos el componente TemaSwitcher
+import { TemaProvider } from './TemaContext'; 
+import TemaSwitcher from './TemaSwitcher'; 
 
 function App() {
   return (
